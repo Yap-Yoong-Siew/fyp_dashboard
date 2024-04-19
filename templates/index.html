@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Equity Balance Dashboard</title>
+    <style>
+        .dashboard-container {
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+        .dashboard-item {
+            flex-basis: 48%;
+            text-align: center;
+            margin: 10px;
+        }
+        .plot {
+            text-align: center;
+            width: 100%;
+        }
+    </style>
+</head>
+<body>
+    <h1>Equity Balance Dashboard</h1>
+    <div class="dashboard-container">
+        <div class="dashboard-item">
+            <h2>Latest Balance</h2>
+            <p>{{ balance }}</p>
+        </div>
+        <div class="dashboard-item">
+            <h2>Latest Equity</h2>
+            <p>{{ equity }}</p>
+        </div>
+        <div class="plot">
+            <h2>Balance and Equity Time Series</h2>
+            <img src="/combined_plot.png" alt="Combined Time Series">
+        </div>
+    </div>
+</body>
+</html>
