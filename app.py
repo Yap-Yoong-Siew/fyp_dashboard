@@ -38,7 +38,7 @@ def plot_combined_time_series():
         balances = [row[0] for row in data]
         equities = [row[1] for row in data]
         
-        plt.figure(figsize=(10,5))
+        plt.figure(figsize=(10,5), facecolor='#B5FAF4')
         plt.plot(times, balances, label='Balance')
         plt.plot(times, equities, label='Equity', linestyle='--')
         plt.xlabel('Time')
